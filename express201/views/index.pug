@@ -1,1 +1,24 @@
-h1 Rendered file!
+doctype html
+html
+    head
+        title This is Pug
+        script(src='https://code.jquery.com/jquery.js')
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+    body
+        h1 Rendered Pug file!
+        div
+            p A message!
+            p Another message!
+        div.container
+            div.row
+                div.col-sm-3 #{msg}
+                div.col-sm-3 Your message is... #{msg}
+                div.col-sm-6 Your message is... #{msg2}
+                div.col-sm-12 !{html} 
+            div.row
+                ul.col-sm-12
+                    each country in countries
+                        li= country.name + ' -- ' + country.capital
+                        if country.western
+                            div.western This country is in the western hemisphere
+        div Message of the day: 2+2 = #{2+2}

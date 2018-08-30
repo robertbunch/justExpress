@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title>AWS/Ubuntu/Apache Launch - ToDo</title>
+
+	<!-- CSS	-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<nav class="light-blue lighten-1" role="navigation">
+		<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">AWS Check List</a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#">Navbar Link</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+		</div>
+	</nav>
+	<div class="section no-pad-bot" id="index-banner">
+		<div class="container">
+			<br><br>
+			<h1 class="header center orange-text">Deploy To-Do List</h1>
+			<div class="row center">
+				<h5 class="header col s12 light">AWS/Ubuntu/Apache deployment list </h5>
+			</div>
+			<div class="row center">
+				<div class="col m3 offset-m3 s6">
+					<button id="addNewToDo" class="btn waves-effect waves-light">Add New Item</button>
+				</div>
+				<div class="col m3 s6">
+					<button id="seedTheList" class="btn waves-effect waves-light">Import AWS Checklist</button>
+				</div>
+			</div>
+
+			<div id="toDoList" class="row center">
+				<!-- Dynamically Create -->
+			</div>
+			<br><br>
+			<div class="col s12 center">
+				<button id="clearToDo" class="btn red darken-4 waves-effect waves-light">Clear ToDo List</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="section">
+
+			<!--	 Icon Section	 -->
+			<div class="row">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+						<h5 class="center">Empowers you!</h5>
+
+						<p class="light">With your new knowledge, you pretty much become Thor (or whatever Avenger you like). You can make something AND you can deploy it!</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+						<h5 class="center">Repeatable</h5>
+
+						<p class="light">You can do and re-do this process as often as you need to. EC2 instances are easy to terminate and restart, and apache/nginx aren't intimidating if you keep them simple.</p>
+					</div>
+				</div>
+
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+						<h5 class="center">Add on as needed</h5>
+
+						<p class="light">Once you've mastered the simple process, you can start blazing into the more complicated portions of apache and nginx.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<br><br>
+	</div>
+
+	<footer class="page-footer orange">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Company Bio</h5>
+					<p class="grey-text text-lighten-4">Ridiculous Incorperated makes cool stuff. Not complicated, often amazing, always ridiculous.</p>
+
+
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Resources</h5>
+					<ul>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Projects</h5>
+					<ul>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+						<li><a class="white-text" href="#!">Coming...</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container center">
+			 &#xA9; Ridiculous Inc. </a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!--	Scripts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+	<script type="text/javascript" src="js/seedData.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>
