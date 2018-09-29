@@ -1,4 +1,5 @@
-const movieDetails = {  
+const movieDetails = [
+  {  
     adult:false,
     backdrop_path:"/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg",
     belongs_to_collection:{  
@@ -162,7 +163,8 @@ const movieDetails = {
     video:false,
     vote_average:7.6,
     vote_count:6826
-  }{  
+  },
+  {  
     adult:false,
     backdrop_path:"/pc7a2qrIkIxzqWGqcexd3mHzIxy.jpg",
     belongs_to_collection:{  
@@ -277,7 +279,8 @@ const movieDetails = {
     video:false,
     vote_average:6.9,
     vote_count:5273
-  }{  
+  },
+  {  
     adult:false,
     backdrop_path:"/2veJf7wcs1hvJGCQRFTwm37djMW.jpg",
     belongs_to_collection:null,
@@ -361,7 +364,8 @@ const movieDetails = {
     video:false,
     vote_average:7.2,
     vote_count:5172
-  }{  
+  },
+  {  
     adult:false,
     backdrop_path:"/wiSIfl9FnXYGXzUKji7Muc3Oj3o.jpg",
     belongs_to_collection:{  
@@ -432,7 +436,8 @@ const movieDetails = {
     video:false,
     vote_average:6.4,
     vote_count:6574
-  }{  
+  },
+  {  
     adult:false,
     backdrop_path:"/y2qAjM37QgatWeG84DDtwsZuMW.jpg",
     belongs_to_collection:{  
@@ -497,7 +502,8 @@ const movieDetails = {
     video:false,
     vote_average:7.7,
     vote_count:6900
-  }{  
+  },
+  {  
     adult:false,
     backdrop_path:"/ftRkFtAGuHngHnLiOxktq0aCVMF.jpg",
     belongs_to_collection:{  
@@ -569,5 +575,5 @@ const movieDetails = {
     vote_average:6.4,
     vote_count:3396
   }
-
+]
   module.exports = movieDetails;

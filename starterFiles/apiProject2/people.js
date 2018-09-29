@@ -1,4 +1,5 @@
-const people = {  
+const people = [
+{  
     popularity:4.192,
     id:2232,
     profile_path:"/myVdrYNGTgqunLfUSaM8DuVD7DL.jpg",
@@ -72,8 +73,8 @@ const people = {
     ],
     adult:false
 },
-{  
-    popularity:13.951,
+{
+    popularity: 13.951,
     id:500,
     profile_path:"/3oWEuo0e8Nx8JvkqYCDec2iMY6K.jpg",
     name:"Tom Cruise",
@@ -143,7 +144,7 @@ const people = {
     }
     ],
     adult:false
-}
+},
 {  
     popularity:4.521,
     id:5064,
@@ -214,8 +215,7 @@ const people = {
       }
     ],
     adult:false
-  }
-
+  },
   {  
     popularity:9.639,
     id:53714,
@@ -291,4 +291,5 @@ const people = {
     ],
     adult:false
   }
+]
 module.exports = people;

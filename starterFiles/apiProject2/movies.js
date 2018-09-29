@@ -1,4 +1,5 @@
-const movies = {  
+const movies = [
+  {  
     vote_count:6573,
     id:211672,
     video:false,
@@ -555,12 +556,7 @@ const movies = {
     ],
     backdrop_path:"/uUiId6cG32JSRI6RyBQSvQtLjz2.jpg",
     adult:false,
-    overview:"In the "  classic Spider-Man mold",
-    Miles Morales must juggle his high school life with his status as a superhero. Until he learns by Peter Parker,
-    the original Spider-Man,
-    that there is a multiverse,
-    called the "Spider-Verse",
-    in each reality has their own Spider theme hero.",
+    overview:"In the \"classic Spider-Man mold\",Miles Morales must juggle his high school life with his status as a superhero. Until he learns by Peter Parker, the original Spider-Man, that there is a multiverse, called the \"Spider-Verse\", in each reality has their own Spider theme hero.",
     release_date:"2018-12-12"
   },
   {  
@@ -661,7 +657,7 @@ const movies = {
     ],
     backdrop_path:"/yxPAKhXj8k7JXiB8tjRGzp7wO7n.jpg",
     adult:false,
-    overview:"Two episodes of the TV series "  Spider Man" edited together and released as a feature.",
+    overview:"Two episodes of the TV series \"Spider Man\" edited together and released as a feature.",
     release_date:"1981-06-25"
   },
   {  
@@ -811,87 +807,78 @@ const movies = {
     adult:false,
     overview:"Doctor Octavius was a brilliant scientist working on a revolutionary new invention until a laboratory accident fused a set of mechanical arms to his body and turned him into the dreaded supervillain Doctor Octopus. Now Doc Ock seeks his revenge on those who did him wrong, and there are only two men who can put an end to his plan of destruction - Spider-Man or his secret alter-ego, Peter Parker.",
     release_date:"2004-11-03"
+  },
+  {  
+    adult:false,
+    backdrop_path:"/wiSIfl9FnXYGXzUKji7Muc3Oj3o.jpg",
+    belongs_to_collection:{  
+      id:544669,
+      name:"Minions Collection",
+      poster_path:null,
+      backdrop_path:null
+    },
+    budget:74000000,
+    genres:[  
+      {  
+        id:10751,
+        name:"Family"
+      },
+      {  
+        id:16,
+        name:"Animation"
+      },
+      {  
+        id:12,
+        name:"Adventure"
+      },
+      {  
+        id:35,
+        name:"Comedy"
+      }
+    ],
+    homepage:"http://www.minionsmovie.com/",
+    id:211672,
+    imdb_id:"tt2293640",
+    original_language:"en",
+    original_title:"Minions",
+    overview:"Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
+    popularity:9.878,
+    poster_path:"/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+    production_companies:[  
+      {  
+        id:6704,
+        logo_path:"/fOG2oY4m1YuYTQh4bMqqZkmgOAI.png",
+        name:"Illumination Entertainment",
+        origin_country:"US"
+      },
+      {  
+        id:33,
+        logo_path:"/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
+        name:"Universal Pictures",
+        origin_country:"US"
+      }
+    ],
+    production_countries:[  
+      {  
+        iso_3166_1:"US",
+        name:"United States of America"
+      }
+    ],
+    release_date:"2015-06-17",
+    revenue:1156730962,
+    runtime:91,
+    spoken_languages:[  
+      {  
+        iso_639_1:"en",
+        name:"English"
+      }
+    ],
+    status:"Released",
+    tagline:"Before Gru, they had a history of bad bosses",
+    title:"Minions",
+    video:false,
+    vote_average:6.4,
+    vote_count:6574
   }
-
-
-
-
-
-
-
-
-
-  {
-adult: false,
-backdrop_path: "/wiSIfl9FnXYGXzUKji7Muc3Oj3o.jpg",
-belongs_to_collection: {
-id: 544669,
-name: "Minions Collection",
-poster_path: null,
-backdrop_path: null
-},
-budget: 74000000,
-genres: [
-{
-id: 10751,
-name: "Family"
-},
-{
-id: 16,
-name: "Animation"
-},
-{
-id: 12,
-name: "Adventure"
-},
-{
-id: 35,
-name: "Comedy"
-}
-],
-homepage: "http://www.minionsmovie.com/",
-id: 211672,
-imdb_id: "tt2293640",
-original_language: "en",
-original_title: "Minions",
-overview: "Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
-popularity: 9.878,
-poster_path: "/q0R4crx2SehcEEQEkYObktdeFy.jpg",
-production_companies: [
-{
-id: 6704,
-logo_path: "/fOG2oY4m1YuYTQh4bMqqZkmgOAI.png",
-name: "Illumination Entertainment",
-origin_country: "US"
-},
-{
-id: 33,
-logo_path: "/8lvHyhjr8oUKOOy2dKXoALWKdp0.png",
-name: "Universal Pictures",
-origin_country: "US"
-}
-],
-production_countries: [
-{
-iso_3166_1: "US",
-name: "United States of America"
-}
-],
-release_date: "2015-06-17",
-revenue: 1156730962,
-runtime: 91,
-spoken_languages: [
-{
-iso_639_1: "en",
-name: "English"
-}
-],
-status: "Released",
-tagline: "Before Gru, they had a history of bad bosses",
-title: "Minions",
-video: false,
-vote_average: 6.4,
-vote_count: 6574
-}
-
+]
 module.exports = movies;
