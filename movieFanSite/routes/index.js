@@ -34,4 +34,37 @@ router.get('/', function(req, res, next) {
   })
 });
 
+// /movie/:id is a wildcard route. 
+// that means that :id is going to be stored in...
+router.get('/movie/:id',(req, res, next)=>{
+  // res.json(req.params.id);
+  const movieId = req.params.id;
+  const thisMovieUrl = `${apiBaseUrl}/movie/${movieId}?api_key=${apiKey}`
+  // res.send(thisMovieUrl)
+  request.get(thisMovieUrl,(error, response, movieData)=>{
+    const parsedData = JSON.parse(movieData)
+    res.render('single-movie',{
+      parsedData
+    })
+  })
+})
+
+router.post('/search',(req, res, next)=>{
+  // res.send("Sanity Check")
+  const userSearchTerm = encodeURI(req.body.movieSearch);
+  const cat = req.body.cat;
+  const movieUrl = `${apiBaseUrl}/search/${cat}?query=${userSearchTerm}&api_key=${apiKey}`
+  // res.send(movieUrl)
+  request.get(movieUrl,(error, response, movieData)=>{
+    let parsedData = JSON.parse(movieData);
+    // res.json(parsedData);
+    if(cat=="person"){
+      parsedData.results = parsedData.results[0].known_for;
+    }
+    res.render('index', {
+      parsedData: parsedData.results
+    })
+  })
+})
+
 module.exports = router;
