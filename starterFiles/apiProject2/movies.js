@@ -19,7 +19,7 @@ const movies = [
     adult:false,
     overview:"Minions Stuart, Kevin and Bob are recruited by Scarlet Overkill, a super-villain who, alongside her inventor husband Herb, hatches a plot to take over the world.",
     release_date:"2015-06-17",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:6897,
@@ -40,7 +40,7 @@ const movies = [
     adult:false,
     overview:"Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With Andy about to go to college, the gang find themselves accidentally left at a nefarious day care center. The toys must band together to escape and return home to Andy.",
     release_date:"2010-06-16",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:3396,
@@ -62,7 +62,7 @@ const movies = [
     adult:false,
     overview:"Gru and his wife Lucy must stop former '80s child star Balthazar Bratt from achieving world domination.",
     release_date:"2017-06-15",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:6559,
@@ -84,7 +84,7 @@ const movies = [
     adult:false,
     overview:"Dory is reunited with her friends Nemo and Marlin in the search for answers about her past. What can she remember? Who are her parents? And where did she learn to speak Whale?",
     release_date:"2016-06-16",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:8247,
@@ -106,7 +106,7 @@ const movies = [
     adult:false,
     overview:"Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
     release_date:"2016-02-11",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:0,
@@ -128,7 +128,7 @@ const movies = [
     adult:false,
     overview:"An exploration of the world of the secret organizations and free masonry. A two - minute - epic revealing what the world has become with morals' absence in every aspect of life.",
     release_date:"2018-04-24",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:6310,
@@ -149,7 +149,7 @@ const movies = [
     adult:false,
     overview:"Gru is recruited by the Anti-Villain League to help deal with a powerful new super criminal.",
     release_date:"2013-06-25",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:5546,
@@ -171,7 +171,7 @@ const movies = [
     adult:false,
     overview:"The tables are turned as four teenagers are sucked into Jumanji's world - pitted against rhinos, black mambas and an endless variety of jungle traps and puzzles. To survive, they'll play as characters from the game.",
     release_date:"2017-12-09",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:4976,
@@ -194,7 +194,7 @@ const movies = [
     adult:false,
     overview:"Shrek, Fiona and Donkey set off to Far, Far Away to meet Fiona's mother and father. But not everyone is happy. Shrek and the King find it hard to get along, and there's tension in the marriage. The fairy godmother discovers that Shrek has married Fiona instead of her Son Prince Charming and sets about destroying their marriage.",
     release_date:"2004-05-19",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:3703,
@@ -216,7 +216,7 @@ const movies = [
     adult:false,
     overview:"Times are changing for Manny the moody mammoth, Sid the motor mouthed sloth and Diego the crafty saber-toothed tiger. Life heats up for our heroes when they meet some new and none-too-friendly neighbors – the mighty dinosaurs.",
     release_date:"2009-06-29",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:3851,
@@ -238,7 +238,7 @@ const movies = [
     adult:false,
     overview:"Manny, Diego, and Sid embark upon another adventure after their continent is set adrift. Using an iceberg as a ship, they encounter sea creatures and battle pirates as they explore a new world.",
     release_date:"2012-06-26",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:4596,
@@ -260,7 +260,7 @@ const movies = [
     adult:false,
     overview:"The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes.",
     release_date:"2016-06-18",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:9637,
@@ -282,7 +282,7 @@ const movies = [
     adult:false,
     overview:"The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
     release_date:"2017-04-19",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:10410,
@@ -304,7 +304,7 @@ const movies = [
     adult:false,
     overview:"Growing up can be a bumpy road, and it's no exception for Riley, who is uprooted from her Midwest life when her father starts a new job in San Francisco. Like all of us, Riley is guided by her emotions - Joy, Fear, Anger, Disgust and Sadness. The emotions live in Headquarters, the control center inside Riley's mind, where they help advise her through everyday life. As Riley and her emotions struggle to adjust to a new life in San Francisco, turmoil ensues in Headquarters. Although Joy, Riley's main and most important emotion, tries to keep things positive, the emotions conflict on how best to navigate a new city, house and school.",
     release_date:"2015-06-09",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:8419,
@@ -327,7 +327,7 @@ const movies = [
     adult:false,
     overview:"Thor is on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the prophecy of destruction to his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
     release_date:"2017-10-25",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:6058,
@@ -349,7 +349,7 @@ const movies = [
     adult:false,
     overview:"Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history.",
     release_date:"2017-10-27",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:3811,
@@ -372,7 +372,7 @@ const movies = [
     adult:false,
     overview:"The King of Far Far Away has died and Shrek and Fiona are to become King &amp; Queen. However, Shrek wants to return to his cozy swamp and live in peace and quiet, so when he finds out there is another heir to the throne, they set off to bring him back to rule the kingdom.",
     release_date:"2007-05-17",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:5586,
@@ -394,7 +394,7 @@ const movies = [
     adult:false,
     overview:"Thrust into an all-new adventure, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant and beautiful astronomer and a headstrong young man in the British navy.",
     release_date:"2017-05-23",
-    homepage: true
+    most_popular: true
   },
   {  
     vote_count:17022,
@@ -415,7 +415,7 @@ const movies = [
     adult:false,
     overview:"Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
     release_date:"2016-02-09",
-    homepage: true
+    most_popular: true
   },
   
   {  
