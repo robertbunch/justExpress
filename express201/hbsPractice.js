@@ -2,6 +2,8 @@ const path = require('path')
 
 const express = require('express');
 const app = express();
+const hbs = require('hbs');
+hbs.registerPartials(__dirname + '/views/partials');
 
 const helmet = require('helmet');
 app.use(helmet()) //MY BAD... HELMET ON... READY FOR BATTLE!

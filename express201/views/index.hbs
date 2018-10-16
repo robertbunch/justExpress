@@ -10,6 +10,6 @@ Country capital: {{country.capital}} --}}
 {{!-- each, if, unless --}}
 {{#each countries}}
     {{#unless this.western}}
-        <li>{{this.name}} -- {{this.capital}}</li>
+        {{> countries}}
     {{/unless}}
 {{/each}}
