@@ -15,7 +15,7 @@ app.use(express.urlencoded());
 // app.set(), takes 2 args:
 // 1. key
 // 2. value
-app.set('view engine', 'pug')
+app.set('view engine', 'ejs')
 app.set('views',path.join(__dirname, 'views'))
 
 // 1. Express as we know it happens. This File.

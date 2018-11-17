@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const db = require('../database/db');
+const db = require('../db');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   const query = 'SELECT * FROM city_weathers WHERE id > $1'

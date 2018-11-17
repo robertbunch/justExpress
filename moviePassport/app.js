@@ -3,17 +3,45 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//==============PASSPORT FILES==================/
+const session = require('express-session');
+const passport = require('passport');
+const GitHubStrategy = require('passport-github').Strategy;
+// console.log(GitHubStrategy)
+//==============================================
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 var app = express();
+const helmet = require('helmet')
+app.use(helmet());
 
-const db = require('db');
+// =============PASSPORT CONFIG!===============
+app.use(session({
+  secret: 'I love Express!',
+  resave: false,
+  saveUninitialized: true,
+}))
+app.use(passport.initialize());
+app.use(passport.session());
+const passportConfig = require('./config')
+passport.use(new GitHubStrategy(passportConfig,
+function(accessToken, refreshToken, profile, cb) {
+  // console.log(profile);
+  return cb(null, profile);
+}
+));
+passport.serializeUser((user, cb)=>{
+  cb(null,user);
+})
+passport.deserializeUser((user,cb)=>{
+  cb(null,user)
+})
+// ==========================================
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -22,7 +50,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Movie App </title>
+	<% include head %>
+</head>
+<body>
+
+	<% include navbar %>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Now Playing</h1>
+			</div>
+			<div class="col-sm-12">
+				<!-- we have an array! Called parsedData -->
+				<% parsedData.forEach((movie)=>{ %>
+          <div class="col-md-3 col-sm-4 poster">
+            <a href="/movie/<%= movie.id %>"><img src="<%= imageBaseUrl + movie.poster_path %>" /></a>
+          </div>
+        <% })%>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
