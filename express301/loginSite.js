@@ -140,7 +140,7 @@ app.get('/statement',(req, res, next)=>{
     // res.sendFile(path.join(__dirname, 'userStatements/BankStatementChequing.png'),'jimsStatement.png')
     // res.attachment takes 1 arg:
     // 1. filename.
-    // all attachment does it set up the headers. it wont actually send the file
+    // all attachment does it set up the headers. It wont actually send the file.
     // res.attachment(path.join(__dirname, 'userStatements/BankStatementChequing.png'))
 
 })
