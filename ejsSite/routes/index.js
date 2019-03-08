@@ -7,3 +7,4 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = router;
+// Always export the router, back to the app
