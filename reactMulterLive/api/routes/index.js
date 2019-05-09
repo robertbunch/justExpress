@@ -4,12 +4,11 @@ const fs = require('fs');
 const multer  = require('multer')
 const upload = multer({ dest: 'public/images/founderImages/tmp' })
 
-/* GET home page. */
-router.get('/uploadFile', function(req, res, next) {
+router.post('/uploadFile', function(req, res, next) {
   res.json(req.file);
 });
 
-router.get('/uploadFiles', function(req, res, next) {
+router.post('/uploadFiles', function(req, res, next) {
   res.json(req.files);
 });
 
