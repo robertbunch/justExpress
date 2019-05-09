@@ -20,14 +20,29 @@ router.post('/formsub',upload.single('meme'),(req, res, next)=>{
   
 })
 
-router.post('/formsubarray',upload.array('meme'),(req, res, next)=>{
-  console.log(req.files);
-  const newPath = `public/images/uploads/${req.file.originalname}${Date.now()}`;
-  fs.rename(req.file.path, newPath, (err)=>{
-    if(err) throw err;
-    // upload newPath to the db
-    res.json("file uploaded!")
-  });
-})
+  router.post('/formsubarray',upload.array('meme'),(req, res, next)=>{
+    console.log(req.files);
+    const newPath = `public/images/uploads/${req.files[0].originalname}${Date.now()}`;
+    const newPath2 = `public/images/uploads/${req.files[1].originalname}${Date.now()}`;
+    fs.rename(req.file.path, newPath, (err)=>{
+      if(err) throw err;
+      // upload newPath to the db
+      res.json("file uploaded!")
+    });
+  })
+
+  router.post('/formsubarray',upload.fields([
+    { name: 'avatar', maxCount: 1 },
+    { name: 'gallery', maxCount: 8 }
+  ]),(req, res, next)=>{
+    console.log(req.files);
+    const newPath = `public/images/uploads/${req.files[0].originalname}${Date.now()}`;
+    const newPath2 = `public/images/uploads/${req.files[1].originalname}${Date.now()}`;
+    fs.rename(req.file.path, newPath, (err)=>{
+      if(err) throw err;
+      // upload newPath to the db
+      res.json("file uploaded!")
+    });
+  })
 
 module.exports = router;
