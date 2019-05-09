@@ -4,11 +4,13 @@ const fs = require('fs');
 const multer  = require('multer')
 const upload = multer({ dest: 'public/images/founderImages/tmp' })
 
-router.post('/uploadFile', function(req, res, next) {
-  res.json(req.file);
+router.post('/uploadFile', upload.single('meme'), function(req, res, next) {
+  // rename file with fs moduole
+  // upload path to db
+  res.json("file uploaded!");
 });
 
-router.post('/uploadFiles', function(req, res, next) {
+router.post('/uploadFiles', upload.array('meme',2), function(req, res, next) {
   res.json(req.files);
 });
 
