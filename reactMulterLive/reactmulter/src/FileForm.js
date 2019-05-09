@@ -9,12 +9,9 @@ class FileForm extends Component{
 
     render(){
         return(
-            <div>
-                <h1>Sanity Check</h1>
-                <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
 
-                </form>
-            </div>
+            </form>
         )
     }
 }
