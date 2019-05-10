@@ -7,7 +7,7 @@ class FileForm extends Component{
         // console.log("Form Submitted");
         const file = document.getElementById('file-field').files[0];
         const file2 = document.getElementById('file-field2').files[0];
-        const url = 'http://localhost:3000/uploadFiles';
+        const url = 'http://localhost:3000/uploads3';
         const config = {
             headers: {
                 'content-type': 'multipart/form-data'
@@ -15,7 +15,7 @@ class FileForm extends Component{
         }
         const data = new FormData();
         data.append('meme',file);
-        data.append('meme',file2);
+        // data.append('meme',file2);
         // console.log(data);
         // for(let pair of data.entries()){
         //     console.log(pair[0])
