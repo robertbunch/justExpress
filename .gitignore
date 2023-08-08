@@ -1,3 +1,7 @@
 node_modules
 config.js
 .DS_Store
+*.dat
+Recording*
+version.plist
+monthlyChallenges/expressApr23.screenflow/thumbnail.jpg
