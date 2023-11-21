@@ -1,0 +1,17 @@
+{
+  "name": "expresstos3",
+  "version": "1.0.0",
+  "description": "- the entry point for node\r - the express server\r ## public folder\r - where our front-end will live\r - index.html\r - scripts.js\r ## indexRouter\r - where our express routes will live\r ## config.js\r - this will have our AWS/S3 cred\r ## getS3PutLink\r - this will generate our link for the front end, in the backend\r ## getS3SignedLink\r - this will give public access to the file for x time",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1499.0",
+    "express": "^4.18.2",
+    "mime-types": "^2.1.35"
+  }
+}
